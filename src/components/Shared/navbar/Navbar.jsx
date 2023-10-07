@@ -51,7 +51,7 @@ const Navbar = () => {
                                 <Link to="/" className="hover:text-secondary-100 transition-all duration-200">
                                     Cart
                                 </Link>
-                                <Link to="/" className="hover:text-secondary-100 transition-all duration-200">
+                                <Link to="/login" className="hover:text-secondary-100 transition-all duration-200">
                                     Log In
                                 </Link>
                             </div>
