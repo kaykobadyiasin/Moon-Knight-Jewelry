@@ -18,8 +18,8 @@ const Navbar = () => {
     const rightNavMenuData = [
         {
             label: "CATALOGUES",
-            path: "/",
-            dropdownItems: [{ label: "CONTACT US", path: "/contact" }, { label: "CONTACT US", path: "/contact" }, { label: "CONTACT US", path: "/contact" }],
+            path: "/catalogue",
+            dropdownItems: [{ label: "Catalogue1", path: "/catalogue" }, { label: "Catalogue2", path: "/catalogue" }, { label: "Catalogue3", path: "/catalogue" }],
         },
     ];
 

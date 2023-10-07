@@ -53,34 +53,52 @@ const Home = () => {
                 </div>
                 {/* category text  */}
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5">
-                    <Link>
+                    <Link to='/'>
                         <div className="relative">
                             <img src={product1} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-4/12 text-center">
+                                <span>Workwear</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link>
-                        <div className="">
+                    <Link to='/'>
+                        <div className="relative">
                             <img src={product2} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-5/12 text-center">
+                                <span>Schoolwer</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link>
-                        <div className="">
+                    <Link to='/'>
+                        <div className="relative">
                             <img src={product3} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-5/12 text-center">
+                                <span>E Scooter</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link>
-                        <div className="">
+                    <Link to='/'>
+                        <div className="relative">
                             <img src={product4} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-5/12 text-center">
+                                <span>Sports</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link>
-                        <div className="">
+                    <Link to='/'>
+                        <div className="relative">
                             <img src={product5} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-5/12 text-center">
+                                <span>Jackets & Coats</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link>
-                        <div className="">
+                    <Link to='/'>
+                        <div className="relative">
                             <img src={product6} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
+                            <div className="absolute top-24 bg-secondary-100 py-3 px-5 text-2xl font-semibold text-white min-w-5/12 text-center">
+                                <span>Foodball</span>
+                            </div>
                         </div>
                     </Link>
                 </div>
