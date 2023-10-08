@@ -1,6 +1,10 @@
+// 4K - 2560px, Laptop L - 1440px, Laptop - 1024px, Tablet - 768px, Mobile L - 425px, Mobile M - 375px, Mobile S - 320px
+
+
+
 import { Icon } from "@iconify/react";
 import logo from '../../../assets/logo.jpg'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -8,10 +12,10 @@ const Navbar = () => {
     const leftNavMenuData = [
         { label: "HOME", path: "/" },
         { label: "ABOUT US", path: "/about" },
-        { label: "SCHOOLWEAR", path: "/" },
-        { label: "WORKWEAR", path: "/" },
-        { label: "SPORTS", path: "/" },
-        { label: "E SCOOTER", path: "/" },
+        { label: "SCHOOLWEAR", path: "/SCHOOLWEAR" },
+        { label: "WORKWEAR", path: "/WORKWEAR" },
+        { label: "SPORTS", path: "/SPORTS" },
+        { label: "E SCOOTER", path: "/E SCOOTER" },
         { label: "CONTACT US", path: "/contact" },
     ];
 
@@ -19,17 +23,15 @@ const Navbar = () => {
         {
             label: "CATALOGUES",
             path: "/catalogue",
-            dropdownItems: [{ label: "Catalogue1", path: "/catalogue" }, { label: "Catalogue2", path: "/catalogue" }, { label: "Catalogue3", path: "/catalogue" }],
         },
     ];
 
-    // State to manage dropdown visibility
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isToggle, setIsToggle] = useState(false);
 
-    // Function to toggle dropdown visibility
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
+
+    const handleToggle = () => {
+        setIsToggle(!isToggle)
+    }
 
 
     return (
@@ -40,20 +42,20 @@ const Navbar = () => {
                         <div className="mb-4 lg:mb-0">
                             <p className="font-semibold">FREE SHIPPING FOR ORDERS OVER £50</p>
                         </div>
-                        <div className=" lg:flex gap-20 items-center">
-                            <div className="space-x-6 font-semibold">
-                                <Link to="/" className="hover:text-secondary-100 transition-all duration-200">
+                        <div className="flex md:flex-row flex-col lg:gap-20 md:gap-20 gap-5 items-center">
+                            <div className="space-x-6 font-semibold menu">
+                                <NavLink to="/" className="hover:text-secondary-100 transition-all duration-200">
                                     My Account
-                                </Link>
-                                <Link to="/" className="hover:text-secondary-100 transition-all duration-200">
+                                </NavLink>
+                                <NavLink to="/contact" className="hover:text-secondary-100 transition-all duration-200">
                                     Contact Us
-                                </Link>
-                                <Link to="/" className="hover:text-secondary-100 transition-all duration-200">
+                                </NavLink>
+                                <NavLink to="/cart" className="hover:text-secondary-100 transition-all duration-200">
                                     Cart
-                                </Link>
-                                <Link to="/login" className="hover:text-secondary-100 transition-all duration-200">
+                                </NavLink>
+                                <NavLink to="/login" className="hover:text-secondary-100 transition-all duration-200">
                                     Log In
-                                </Link>
+                                </NavLink>
                             </div>
                             <div className="flex space-x-5">
                                 <Link to="/">
@@ -68,54 +70,67 @@ const Navbar = () => {
                 </div>
                 {/* Second Row */}
                 <div className="container mx-auto my-5">
-                    <div className="flex justify-between items-center w-full mt-4 lg:mt-0 ">
-                        <div className="flex items-center space-x-6">
+                    <div className="flex lg:flex-row md:flex-col flex-col justify-between items-center w-full mt-4 lg:mt-0">
+                        <div className="flex lg:flex-row md:flex-row flex-col items-center space-x-6 md:space-y-0 space-y-6">
                             {/* Logo */}
                             <Link to='/'>
                                 <img
                                     src={logo}
                                     alt="Logo"
-                                    className="w-full rounded-sm"
+                                    className="lg:w-8/12 md:w-8/12 w-12/12 lg:mx-0 md:mx-0 mx-auto lg:rounded-lg"
                                 />
                             </Link>
                             {/* Search Bar (you can use an input field here) */}
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                className="py-2 px-5 border rounded-full w-full"
-                            />
+
+                            <form className="flex items-center w-10/12">
+                                <div className="relative w-full">
+                                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <Icon icon="ic:baseline-search" />
+                                    </div>
+                                    <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5 " placeholder="Search ..." />
+                                </div>
+                                <button type="submit" className="p-2.5 ml-2 text-sm font-medium text-white bg-secondary-100 rounded-lg border  hover:bg-primary-100 focus:outline-none transition-all duration-200">
+                                    <Icon icon="ic:baseline-search" className="text-xl" />
+                                    <span className="sr-only">Search</span>
+                                </button>
+                            </form>
+
+                        </div>
+                        <div className="flex items-center space-x-4 lg:mt-0 mt-5 order-last">
                             {/* Call Us Now */}
-                            <div className="flex items-start space-x-2 w-full">
+                            {/* <div className="flex items-start space-x-2 w-full">
                                 <Icon icon="solar:phone-linear" className="text-3xl" />
                                 <p className="font-semibold">Call Us Now <br /> <span className="text-xl font-bold">+880 147258369</span></p>
-                            </div>
-                        </div>
-                        <div className="flex items-center space-x-4">
+                            </div> */}
                             {/* User Login Icon */}
-                            <Link to="/">
+                            <Link to="/login">
                                 <Icon icon="mdi:account" className="text-3xl" />
                             </Link>
                             {/* Cart Icon */}
-                            <Link to="/">
+                            <Link to="/cart">
                                 <Icon icon="mdi:cart" className="text-3xl" />
                             </Link>
+                            {/* toggol Icon */}
+                            <button onClick={handleToggle} className="lg:hidden cursor-pointer">
+                                <Icon icon="ph:list-bold" className="text-3xl" />
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 {/* third row  */}
-                <div className="container mx-auto my-8">
+                <div className={isToggle ? `container mx-auto my-8` : `container mx-auto my-8 lg:block hidden`} >
                     <div className="lg:flex justify-between w-full mt-4 lg:mt-0">
-                        <div className="flex flex-col lg:flex-row lg:space-x-10 text-sm font-semibold">
+                        <div className="Navmenu flex flex-col lg:flex-row lg:space-x-10 items-center lg:space-y-0 md:space-y-5 space-y-5 text-sm font-semibold">
                             {leftNavMenuData.map((item, index) =>
                                 typeof item === "object" ? (
-                                    <Link
+                                    <NavLink
                                         key={index}
                                         to={item.path}
                                         className="hover:text-primary-100 transition-all duration-200"
                                     >
                                         {item.label}
-                                    </Link>
+                                    </NavLink>
                                 ) : (
                                     <Link key={index} to="/" className="hover:text-gray-300">
                                         {item}
@@ -123,29 +138,16 @@ const Navbar = () => {
                                 )
                             )}
                         </div>
-                        <div className="relative mt-2 lg:mt-0 text-sm font-semibold">
+                        <div className="Navmenu relative flex  lg:mt-0 text-sm font-semibold justify-center mt-5">
                             {rightNavMenuData.map((item, index) =>
                                 typeof item === "object" ? (
-                                    <Link
+                                    <NavLink
                                         key={index}
                                         to={item.path}
-                                        onMouseEnter={toggleDropdown}
-                                        onMouseLeave={toggleDropdown}
                                         className=" hover:text-primary-100 transition-all duration-200"
                                     >
                                         {item.label}
-                                        {isDropdownOpen && (
-                                            <div className="absolute z-40 left-0 mt-0 bg-white border border-gray-300 w-36">
-                                                <ul>
-                                                    {rightNavMenuData[0].dropdownItems.map((item, index) => (
-                                                        <li key={index} className="p-2 hover:bg-gray-100">
-                                                            <Link to={item.path}>{item.label}</Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-                                    </Link>
+                                    </NavLink>
                                 ) : (
                                     <Link key={index} to="/" className="hover:text-gray-300">
                                         {item}

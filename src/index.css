@@ -2,19 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.Navmenu .active {
+  color: #00F0AF;
+}
+
 @keyframes borderAnimation {
-    0% {
-        border-image: linear-gradient(to right, #042E24, #00F0AF) 3;
-      }
-    50% {
-        border-image: linear-gradient(to top, #00F0AF, #f7f0f0, #00F0AF) 3;
-      }
-      100% {
-        border-image: linear-gradient(to left, #f7f0f0, #042E24, #00F0AF) 3;
-      }
+  0% {
+    border-image: linear-gradient(to right, #042E24, #00F0AF) 3;
   }
 
-  .animation-border {
-    animation: borderAnimation 3s infinite;
-    transition: .5s;
+  25% {
+    border-image: linear-gradient(to top, #00F0AF, #f7f0f0, #042E24) 3;
   }
+
+  50% {
+    border-image: linear-gradient(to top, #00F0AF, #f7f0f0, #00F0AF) 3;
+  }
+  75% {
+    border-image: linear-gradient(to top, #042E24, #f7f0f0, #00F0AF) 3;
+  }
+
+  100% {
+    border-image: linear-gradient(to left, #f7f0f0, #042E24, #00F0AF) 3;
+  }
+}
+
+.animation-border {
+  animation: borderAnimation 3s infinite;
+  transition: .5s;
+}
