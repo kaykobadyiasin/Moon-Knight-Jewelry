@@ -103,15 +103,15 @@ const Navbar = () => {
                                 <p className="font-semibold">Call Us Now <br /> <span className="text-xl font-bold">+880 147258369</span></p>
                             </div> */}
                             {/* User Login Icon */}
-                            <Link to="/login">
+                            <Link to="/login" className="hover:text-primary-100 transition-all duration-200">
                                 <Icon icon="mdi:account" className="text-3xl" />
                             </Link>
                             {/* Cart Icon */}
-                            <Link to="/cart">
+                            <Link to="/cart" className="hover:text-primary-100 transition-all duration-200">
                                 <Icon icon="mdi:cart" className="text-3xl" />
                             </Link>
                             {/* toggol Icon */}
-                            <button onClick={handleToggle} className="lg:hidden cursor-pointer">
+                            <button onClick={handleToggle} className="lg:hidden cursor-pointer hover:text-primary-100 transition-all duration-200">
                                 <Icon icon="ph:list-bold" className="text-3xl" />
                             </button>
                         </div>

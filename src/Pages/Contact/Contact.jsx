@@ -17,11 +17,10 @@ const Contact = () => {
                         <div className="p-6 rounded-lg shadow-lg">
                             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
                             <p className="space-y-5">
-                                <p><strong>Email:</strong> brandituk@gmail.com</p>
+                                <p><strong>Email:</strong> branditfashionuk@gmail.com</p>
                                 <p><strong>Phone:</strong> +44 7393 509734</p>
                                 <p><strong>Address:</strong> 24 STOCKINGSTONE ROAD, LUTON LU2 7NB</p>
-                                <p><strong>Opening Hours: </strong>
-                                24/7 Online Shop</p>
+                                <p><strong>Opening Hours: </strong>24/7 hours Online Shop</p>
                             </p>
                         </div>
                         <div className="p-6 rounded-lg shadow-lg">

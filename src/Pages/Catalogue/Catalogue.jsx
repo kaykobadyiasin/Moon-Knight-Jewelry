@@ -16,7 +16,7 @@ import product14 from '../../assets/products/image14.jpg'
 const Catalogue = () => {
     return (
         <div className="container mx-auto">
-            <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5" >
+            <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5 animate__animated animate__fadeInRightBig" >
                 <Link to='/'>
                     <div className="relative ">
                         <img src={product16} className="w-full p-2 border h-96 object-contain border-transparent animation-border" alt="" />

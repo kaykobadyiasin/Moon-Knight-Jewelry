@@ -15,7 +15,7 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center space-x-2 text-lg">
                             <Icon icon="tabler:mail-filled" />
-                            <p className="text-secondary-200">brandituk@gmail.com</p>
+                            <p className="text-secondary-200">branditfashionuk@gmail.com</p>
                         </div>
                         <div className="flex items-center space-x-2 text-lg mt-2">
                             <Icon icon="mdi:location" />
@@ -57,7 +57,7 @@ const Footer = () => {
                         <p className="text-lg mb-3 font-semibold">
                             Temporary Opening Hours
                         </p>
-                        <p className="text-lg text-secondary-200">From <strong>Mon 21st Aug</strong> to <strong>7th September</strong> <br /> <strong>Monday to Saturday</strong> 8am to 7 pm <br /> <strong>Sundays</strong> 10 am to 4 pm</p>
+                        <p className="text-lg text-secondary-200">24/7 hours Online Shop</p>
                     </div>
                 </div>
             </footer>
