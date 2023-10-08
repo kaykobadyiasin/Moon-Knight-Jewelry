@@ -18,7 +18,7 @@ const Home = () => {
                     <p className="bg-primary-100 text-center py-4 text-2xl rounded-md text-white xl:mx-0 lg:mx-5 md:mx-5 mx-5">Appointments: Book Now</p>
                 </div>
                 {/* category text  */}
-                <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-10 my-10 xl:mx-0 lg:mx-5 md:mx-5 mx-5 animate__animated animate__fadeInRightBig">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-10 my-10 xl:mx-0 lg:mx-5 md:mx-5 mx-5 animate__animated animate__fadeInRightBig animate__slower">
                     <div className="py-5 px-5 bg-primary-100 rounded-md flex flex-col justify-center">
                         <h3 className="text-2xl font-semibold mb-5 text-center text-white">Schoolwear</h3>
                         <button className="py-2 px-2 rounded-md mx-auto bg-white font-semibold hover:bg-secondary-100 hover:text-white transition-all duration-300"><Link to='/'>Shop Now</Link></button>
@@ -53,7 +53,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* category text  */}
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 xl:mx-0 lg:mx-5 md:mx-5 mx-5 animate__animated animate__fadeInLeftBig">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 xl:mx-0 lg:mx-5 md:mx-5 mx-5 animate__animated animate__fadeInLeftBig animate__slower">
                     <Link to='/'>
                         <div className="relative productCatalogue">
                             <img src={product1} className="w-full border-[12px] h-96 object-contain border-transparent animation-border" alt="" />
