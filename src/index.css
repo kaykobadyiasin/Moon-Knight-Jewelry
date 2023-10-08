@@ -5,27 +5,27 @@
 
 
 .Navmenu .active {
-  color: #00F0AF;
+  color: #00b584;
 }
 
 @keyframes borderAnimation {
   0% {
-    border-image: linear-gradient(to right, #042E24, #00F0AF) 3;
+    border-image: linear-gradient(to right, #042E24, #00b584) 3;
   }
 
   25% {
-    border-image: linear-gradient(to top, #00F0AF, #f7f0f0, #042E24) 3;
+    border-image: linear-gradient(to top, #00b584, #f7f0f0, #042E24) 3;
   }
 
   50% {
-    border-image: linear-gradient(to top, #00F0AF, #f7f0f0, #00F0AF) 3;
+    border-image: linear-gradient(to top, #00b584, #f7f0f0, #00b584) 3;
   }
   75% {
-    border-image: linear-gradient(to top, #042E24, #f7f0f0, #00F0AF) 3;
+    border-image: linear-gradient(to top, #042E24, #f7f0f0, #00b584) 3;
   }
 
   100% {
-    border-image: linear-gradient(to left, #f7f0f0, #042E24, #00F0AF) 3;
+    border-image: linear-gradient(to left, #f7f0f0, #042E24, #00b584) 3;
   }
 }
 

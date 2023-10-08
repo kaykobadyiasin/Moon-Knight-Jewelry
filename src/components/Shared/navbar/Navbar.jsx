@@ -40,7 +40,7 @@ const Navbar = () => {
                 <div className=" bg-primary-100 p-4 text-white">
                     <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
                         <div className="mb-4 lg:mb-0">
-                            <p className="font-semibold">FREE SHIPPING FOR ORDERS OVER £50</p>
+                            <p className="font-semibold">SHIPPING FOR ORDERS OVER £50</p>
                         </div>
                         <div className="flex md:flex-row flex-col lg:gap-20 md:gap-20 gap-5 items-center">
                             <div className="space-x-6 font-semibold menu">

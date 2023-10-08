@@ -11,11 +11,11 @@ const Footer = () => {
                         <h2 className="text-2xl font-bold mb-4">CONTACT</h2>
                         <div className="flex items-center space-x-2 text-lg">
                             <Icon icon="ic:baseline-phone" />
-                            <p className="text-secondary-200">01582 494401</p>
+                            <p className="text-secondary-200">+44 7393 509734</p>
                         </div>
                         <div className="flex items-center space-x-2 text-lg">
                             <Icon icon="tabler:mail-filled" />
-                            <p className="text-secondary-200">Jssports@btconnect.com</p>
+                            <p className="text-secondary-200">brandituk@gmail.com</p>
                         </div>
                         <div className="flex items-center space-x-2 text-lg mt-2">
                             <Icon icon="mdi:location" />
@@ -26,7 +26,7 @@ const Footer = () => {
                         <h2 className="text-2xl font-bold mb-4">QUICK LINKS</h2>
                         <ul className="space-y-2 text-secondary-200">
                             <li>
-                                <Link to="/" className="text-lg hover:underline">
+                                <Link to="/about" className="text-lg hover:underline">
                                     About Us
                                 </Link>
                             </li>
@@ -36,17 +36,17 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-lg hover:underline">
+                                <Link to="/login" className="text-lg hover:underline">
                                     Login
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-lg hover:underline">
+                                <Link to="/termsConditions" className="text-lg hover:underline">
                                     Terms & Conditions
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-lg hover:underline">
+                                <Link to="/contact" className="text-lg hover:underline">
                                     Contact Us
                                 </Link>
                             </li>
