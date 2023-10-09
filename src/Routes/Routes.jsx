@@ -14,6 +14,9 @@ import AddJewelry from "../Pages/AddJewelry/AddJewelry";
 import Dashboard from "../Layout/Dashboard";
 import AllItems from "../Pages/Dashboard/AllItems/AllItems";
 import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
+import MyAllItems from "../Pages/Dashboard/MyAllItems/MyAllItems";
+import ManageMyItems from "../Pages/Dashboard/ManageMyItems/ManageMyItems";
+import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 
 
 
@@ -68,6 +71,7 @@ const router = createBrowserRouter([
         path: 'dashboard',
         element: <Dashboard/>,
         children: [
+            // Admin 
             {
                 path: 'allItems',
                 element: <AllItems/>
@@ -76,6 +80,21 @@ const router = createBrowserRouter([
                 path: 'manageItems',
                 element: <ManageItems/>
             },
+            {
+                path: 'addItems',
+                element: <AddItems/>
+            },
+
+            // user 
+            {
+                path: 'allMyItems',
+                element: <MyAllItems/>
+            },
+            {
+                path: 'manageMyItems',
+                element: <ManageMyItems/>
+            },
+
         ]
     },
     {
