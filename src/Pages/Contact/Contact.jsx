@@ -4,7 +4,7 @@ import PageBanner from "../../components/PageBanner/PageBanner";
 const Contact = () => {
     return (
         <div>
-            <PageBanner image={'https://images.unsplash.com/photo-1611107683227-e9060eccd846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'} title={'Contact Us'} subtitle={'Brandit Fashion Ltd.'} />
+            <PageBanner image={'https://images.unsplash.com/photo-1611107683227-e9060eccd846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'} title={'Contact Us'} subtitle={'Moon Night Jewelry.'} />
 
             <div className="py-10">
 

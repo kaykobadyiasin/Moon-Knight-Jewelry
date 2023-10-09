@@ -14,10 +14,11 @@ import product13 from '../../assets/products/image13.jpg'
 import product14 from '../../assets/products/image14.jpg'
 import product17 from '../../assets/products/image17.jpg'
 
-const AllJewelry = () => {
+
+const MyJewelry = () => {
     return (
         <div className="container mx-auto">
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5 animate__animated animate__fadeIn" >
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5 animate__animated animate__fadeIn" >
                 <Link to='/'>
                     <div className="relative">
                         <img src={product16} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
@@ -144,9 +145,9 @@ const AllJewelry = () => {
                         </div>
                     </div>
                 </Link>
-            </div >
+            </div>
         </div>
     );
 };
 
-export default AllJewelry;
+export default MyJewelry;

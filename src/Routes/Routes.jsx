@@ -8,51 +8,80 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Error from "../Pages/Error/Error";
 import Cart from "../Pages/Cart/Cart";
 import TermsConditions from "../Pages/Terms&Conditions/TermsConditions";
-import AllJewelry from "../Pages/Catalogue/AllJewelry";
+import AllJewelry from "../Pages/AllJewelry/AllJewelry";
+import MyJewelry from "../Pages/MyJewelry/MyJewelry";
+import AddJewelry from "../Pages/AddJewelry/AddJewelry";
+import Dashboard from "../Layout/Dashboard";
+import AllItems from "../Pages/Dashboard/AllItems/AllItems";
+import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
+
+
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Layout/>,
+        element: <Layout />,
         children: [
             {
                 path: '/',
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: '/about',
-                element: <About/>
+                element: <About />
             },
             {
                 path: '/contact',
-                element: <Contact/>
+                element: <Contact />
             },
             {
                 path: '/allJewelry',
-                element: <AllJewelry/>
+                element: <AllJewelry />
+            },
+            {
+                path: '/myJewelry',
+                element: <MyJewelry />
+            },
+            {
+                path: '/addJewelry',
+                element: <AddJewelry />
             },
             {
                 path: '/cart',
-                element: <Cart/>
+                element: <Cart />
             },
             {
                 path: 'signUp',
-                element: <SignUp/>
+                element: <SignUp />
             },
             {
                 path: 'login',
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: 'termsConditions',
-                element: <TermsConditions/>
-            },
-            {
-                path: '*',
-                element: <Error/>
+                element: <TermsConditions />
             },
         ]
-    }
+    },
+    {
+        path: 'dashboard',
+        element: <Dashboard/>,
+        children: [
+            {
+                path: 'allItems',
+                element: <AllItems/>
+            },
+            {
+                path: 'manageItems',
+                element: <ManageItems/>
+            },
+        ]
+    },
+    {
+        path: '*',
+        element: <Error />
+    },
 ])
 
 export default router;

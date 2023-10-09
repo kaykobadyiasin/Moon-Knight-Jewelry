@@ -12,8 +12,8 @@ const Navbar = () => {
         { label: "HOME", path: "/" },
         { label: "ABOUT US", path: "/about" },
         { label: "ALL JEWELRY", path: "/allJewelry" },
-        { label: "MY JEWELRY", path: "/about" },
-        { label: "ADD JEWELRY", path: "/about" },
+        { label: "MY JEWELRY", path: "/myJewelry" },
+        { label: "ADD JEWELRY", path: "/addJewelry" },
         { label: "BLOGS", path: "/about" },
     ];
 
@@ -48,12 +48,15 @@ const Navbar = () => {
                                 <NavLink to="/contact" className="hover:text-secondary-100 transition-all duration-200">
                                     Contact Us
                                 </NavLink>
-                                <NavLink to="/cart" className="hover:text-secondary-100 transition-all duration-200">
+                                <NavLink to="/dashboard" className="hover:text-secondary-100 transition-all duration-200">
+                                    Dashboard
+                                </NavLink>
+                                {/* <NavLink to="/cart" className="hover:text-secondary-100 transition-all duration-200">
                                     Cart
                                 </NavLink>
                                 <NavLink to="/login" className="hover:text-secondary-100 transition-all duration-200">
                                     Log In
-                                </NavLink>
+                                </NavLink> */}
                             </div>
                             <div className="flex space-x-5">
                                 <Link to="/">

@@ -12,6 +12,10 @@
   transition: .3s ease-in-out;
 }
 
+.dashboardMenu .active{
+  background-color: #dc9a7e;
+}
+
 
 @keyframes borderAnimation {
   0% {
