@@ -1,6 +1,8 @@
 
 import { Icon } from "@iconify/react";
 import logo from '../../../assets/logo.png'
+import user from '../../../assets/user.jpg'
+
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -12,14 +14,14 @@ const Navbar = () => {
         { label: "ALL JEWELRY", path: "/allJewelry" },
         { label: "MY JEWELRY", path: "/about" },
         { label: "ADD JEWELRY", path: "/about" },
-        // { label: "BLOGS", path: "/about" },
+        { label: "BLOGS", path: "/about" },
     ];
 
     const rightNavMenuData = [
-        {
-            label: "BLOGS",
-            path: "/catalogue",
-        },
+        // {
+        //     label: "BLOGS",
+        //     path: "/catalogue",
+        // },
     ];
 
     const [isToggle, setIsToggle] = useState(false);
@@ -116,7 +118,7 @@ const Navbar = () => {
 
                 {/* third row  */}
                 <div className={isToggle ? `container mx-auto my-8` : `container mx-auto my-8 lg:block hidden`} >
-                    <div className="lg:flex justify-between w-full mt-4 lg:mt-0">
+                    <div className="lg:flex justify-between items-center w-full mt-4 lg:mt-0">
                         <div className="Navmenu flex flex-col lg:flex-row lg:space-x-10 items-center lg:space-y-0 md:space-y-5 space-y-5 text-sm font-semibold">
                             {leftNavMenuData.map((item, index) =>
                                 typeof item === "object" ? (
@@ -150,6 +152,9 @@ const Navbar = () => {
                                     </Link>
                                 )
                             )}
+                            <Link to='/'>
+                                <img src={user} className="w-12 h-12 rounded-full object-cover border border-secondary-100" alt="" />
+                            </Link>
                         </div>
                     </div>
                 </div>
