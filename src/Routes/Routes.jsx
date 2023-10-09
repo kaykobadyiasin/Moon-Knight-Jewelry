@@ -3,12 +3,12 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home/Home/Home";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
-import Catalogue from "../Pages/Catalogue/Catalogue";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import Error from "../Pages/Error/Error";
 import Cart from "../Pages/Cart/Cart";
 import TermsConditions from "../Pages/Terms&Conditions/TermsConditions";
+import AllJewelry from "../Pages/Catalogue/AllJewelry";
 
 const router = createBrowserRouter([
     {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
                 element: <Contact/>
             },
             {
-                path: '/catalogue',
-                element: <Catalogue/>
+                path: '/allJewelry',
+                element: <AllJewelry/>
             },
             {
                 path: '/cart',

@@ -11,14 +11,19 @@ const Banner = () => {
 
     const bannerSlides = [
         {
-            image: "https://images.unsplash.com/photo-1569173675610-42c361a86e37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80",
-            title: "MY UNIFORM SHOP 1",
-            subtitle: "INSPIRED COMFORT 1",
+            image: "https://images.unsplash.com/photo-1611107683227-e9060eccd846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            title: "Diamonds Jewelry Collection",
+            subtitle: "Diamonds From Heaven",
         },
         {
-            image: "https://images.unsplash.com/photo-1608680574102-3a81ac3c1c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
-            title: "MY UNIFORM SHOP 2",
-            subtitle: "INSPIRED COMFORT 2",
+            image: "https://images.unsplash.com/photo-1591209627710-d2427565a41f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            title: "Diamond Ring",
+            subtitle: "Color Fantasy",
+        },
+        {
+            image: "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            title: "Diamond Necklace",
+            subtitle: "Color Fantasy",
         },
     ];
 
@@ -36,7 +41,7 @@ const Banner = () => {
                 {bannerSlides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div
-                            className="object-cover bg-cover bg-center h-[600px] relative"
+                            className="object-cover bg-cover bg-center h-[700px] relative"
                             style={{
                                 backgroundImage: `url(${slide.image})`,
                             }}

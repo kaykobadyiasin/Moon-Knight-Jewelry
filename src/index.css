@@ -5,36 +5,36 @@
 
 
 .Navmenu .active {
-  color: #00b584;
+  color: #dc9a7e;
 }
 .productCatalogue:hover .catalogueTitle{
-  background-color: #00b584;
+  background-color: #dc9a7e;
   transition: .3s ease-in-out;
 }
 
 
 @keyframes borderAnimation {
   0% {
-    border-image: linear-gradient(to right, #042E24, #00b584) 3;
+    border-image: linear-gradient(to right, #07113A) 3;
   }
 
   25% {
-    border-image: linear-gradient(to top, #00b584, #f7f0f0, #042E24) 3;
+    border-image: linear-gradient(to top, #f7f0f0, #07113A) 3;
   }
 
   50% {
-    border-image: linear-gradient(to top, #00b584, #f7f0f0, #00b584) 3;
+    border-image: linear-gradient(to top, #f7f0f0) 3;
   }
   75% {
-    border-image: linear-gradient(to top, #042E24, #f7f0f0, #00b584) 3;
+    border-image: linear-gradient(to top, #07113A, #f7f0f0) 3;
   }
 
   100% {
-    border-image: linear-gradient(to left, #f7f0f0, #042E24, #00b584) 3;
+    border-image: linear-gradient(to left, #f7f0f0, #07113A) 3;
   }
 }
 
 .animation-border {
-  animation: borderAnimation 3s infinite;
+  animation: borderAnimation 8s infinite;
   transition: .5s;
 }

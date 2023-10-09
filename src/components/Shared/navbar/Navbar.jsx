@@ -1,9 +1,6 @@
-// 4K - 2560px, Laptop L - 1440px, Laptop - 1024px, Tablet - 768px, Mobile L - 425px, Mobile M - 375px, Mobile S - 320px
-
-
 
 import { Icon } from "@iconify/react";
-import logo from '../../../assets/logo.jpg'
+import logo from '../../../assets/logo.png'
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -12,16 +9,15 @@ const Navbar = () => {
     const leftNavMenuData = [
         { label: "HOME", path: "/" },
         { label: "ABOUT US", path: "/about" },
-        { label: "SCHOOLWEAR", path: "/SCHOOLWEAR" },
-        { label: "WORKWEAR", path: "/WORKWEAR" },
-        { label: "SPORTS", path: "/SPORTS" },
-        { label: "E SCOOTER", path: "/E SCOOTER" },
-        { label: "CONTACT US", path: "/contact" },
+        { label: "ALL JEWELRY", path: "/allJewelry" },
+        { label: "MY JEWELRY", path: "/about" },
+        { label: "ADD JEWELRY", path: "/about" },
+        // { label: "BLOGS", path: "/about" },
     ];
 
     const rightNavMenuData = [
         {
-            label: "CATALOGUES",
+            label: "BLOGS",
             path: "/catalogue",
         },
     ];
@@ -40,7 +36,7 @@ const Navbar = () => {
                 <div className=" bg-primary-100 p-4 text-white">
                     <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
                         <div className="mb-4 lg:mb-0">
-                            <p className="font-semibold">SHIPPING FOR ORDERS OVER £50</p>
+                            <p className="font-semibold">FREE SHIPPING FOR ORDERS OVER £50</p>
                         </div>
                         <div className="flex md:flex-row flex-col lg:gap-20 md:gap-20 gap-5 items-center">
                             <div className="space-x-6 font-semibold menu">
