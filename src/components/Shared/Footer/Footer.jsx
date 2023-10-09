@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import logo from '../../../assets/Logo2.png'
 
 const Footer = () => {
     return (
@@ -9,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <div className="flex items-center mb-4">
-                        <img src={logo} alt="Brand Logo" className="w-full" />
+                        <img src='https://i.ibb.co/j4txGvH/Logo2.png' alt="Brand Logo" className="w-full" />
                     </div>
                     <p className="text-gray-400">Elevate your style with our exquisite jewelry collections.</p>
                 </div>

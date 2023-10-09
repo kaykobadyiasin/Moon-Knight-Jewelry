@@ -1,6 +1,5 @@
 
 import { Icon } from "@iconify/react";
-import logo from '../../../assets/logo.png'
 import user from '../../../assets/user.jpg'
 
 import { Link, NavLink } from "react-router-dom";
@@ -51,12 +50,6 @@ const Navbar = () => {
                                 <NavLink to="/dashboard" className="hover:text-secondary-100 transition-all duration-200">
                                     Dashboard
                                 </NavLink>
-                                {/* <NavLink to="/cart" className="hover:text-secondary-100 transition-all duration-200">
-                                    Cart
-                                </NavLink>
-                                <NavLink to="/login" className="hover:text-secondary-100 transition-all duration-200">
-                                    Log In
-                                </NavLink> */}
                             </div>
                             <div className="flex space-x-5">
                                 <Link to="/">
@@ -76,7 +69,7 @@ const Navbar = () => {
                             {/* Logo */}
                             <Link to='/'>
                                 <img
-                                    src={logo}
+                                    src='https://i.ibb.co/BZRjThR/Logo.png'
                                     alt="Logo"
                                     className="lg:w-8/12 md:w-8/12 w-12/12 lg:mx-0 md:mx-0 mx-auto lg:rounded-lg"
                                 />

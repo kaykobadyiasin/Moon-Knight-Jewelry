@@ -1,18 +1,4 @@
 import { Link } from "react-router-dom";
-import product16 from '../../assets/products/image16.jpg'
-import product2 from '../../assets/products/image2.jpg'
-import product3 from '../../assets/products/image3.jpg'
-import product4 from '../../assets/products/image4.jpg'
-import product5 from '../../assets/products/image5.jpg'
-import product6 from '../../assets/products/image6.jpg'
-import product7 from '../../assets/products/image7.jpg'
-import product8 from '../../assets/products/image8.jpg'
-import product9 from '../../assets/products/image9.jpg'
-import product11 from '../../assets/products/image11.jpg'
-import product12 from '../../assets/products/image12.jpg'
-import product13 from '../../assets/products/image13.jpg'
-import product14 from '../../assets/products/image14.jpg'
-import product17 from '../../assets/products/image17.jpg'
 import { useEffect, useState } from "react";
 
 

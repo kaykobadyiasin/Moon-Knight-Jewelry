@@ -7,8 +7,8 @@ import Layout from './Layout/Layout.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <Layout />
-    </RouterProvider>
+      <RouterProvider router={router}>
+        <Layout />
+      </RouterProvider>
   </React.StrictMode>,
 )
