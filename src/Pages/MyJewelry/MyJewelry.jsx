@@ -13,138 +13,39 @@ import product12 from '../../assets/products/image12.jpg'
 import product13 from '../../assets/products/image13.jpg'
 import product14 from '../../assets/products/image14.jpg'
 import product17 from '../../assets/products/image17.jpg'
+import { useEffect, useState } from "react";
 
 
 const MyJewelry = () => {
+
+    const [myJewelrys, setMyJewelrys] = useState();
+
+    useEffect(() => {
+        fetch('jewelry.json')
+            .then(res => res.json())
+            .then(data => setMyJewelrys(data))
+    }, [])
+
+
     return (
         <div className="container mx-auto">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 lg:mx-0 md:mx-5 mx-5 animate__animated animate__fadeIn" >
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product16} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Nackless</span>
-                            <span>$30</span>
+
+                {
+                    myJewelrys?.map(jewelry => <>
+                        <div key={jewelry._id}>
+                            <Link to='/'>
+                                <div className="relative">
+                                    <img src={jewelry?.image} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
+                                    <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
+                                        <span>{jewelry?.name}</span>
+                                        <span>{jewelry?.price}৳</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product2} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product3} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Diamond Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product4} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Color Full Diamond</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product5} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Bass Light</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product6} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Finger Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product7} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Hand Jewelry</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product8} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Hand Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product9} className="w-full p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Diamond Baslight</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product11} className="w-ful p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Hand Ring Jewelry</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product12} className="w-ful p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Diamond Jewelry Neckless</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product13} className="w-ful p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Jewelry Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product14} className="w-ful p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Jewelry Ring</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
-                <Link to='/'>
-                    <div className="relative">
-                        <img src={product17} className="w-ful p-2 border h-96 object-cover border-transparent animation-border" alt="" />
-                        <div className="flex items-center justify-between bg-secondary-100 py-3 px-5 text-xl font-normal text-white ">
-                            <span>Jewelry Simple</span>
-                            <span>$30</span>
-                        </div>
-                    </div>
-                </Link>
+                    </>)
+                }
             </div>
         </div>
     );

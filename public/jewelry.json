@@ -1,0 +1,100 @@
+[
+  {
+    "_id": "1",
+    "image": "../src/assets/products/image12.jpg",
+    "name": "Diamond Necklace",
+    "price": 999.99,
+    "description": "A stunning diamond necklace that adds elegance to any attire."
+  },
+  {
+    "_id": "2",
+    "image": "../src/assets/products/image17.jpg",
+    "name": "Sapphire Earrings",
+    "price": 299.99,
+    "description": "Beautiful sapphire earrings that catch the light and sparkle."
+  },
+  {
+    "_id": "3",
+    "image": "../src/assets/products/image11.jpg",
+    "name": "Gold Bracelet",
+    "price": 499.99,
+    "description": "A classic gold bracelet that complements any style."
+  },
+  {
+    "_id": "4",
+    "image": "../src/assets/products/image13.jpg",
+    "name": "Pearl Ring",
+    "price": 199.99,
+    "description": "A delicate pearl ring that exudes sophistication."
+  },
+  {
+    "_id": "5",
+    "image": "../src/assets/products/image14.jpg",
+    "name": "Emerald Pendant",
+    "price": 599.99,
+    "description": "An emerald pendant that captures the essence of nature's beauty."
+  },
+  {
+    "_id": "6",
+    "image": "../src/assets/products/image15.jpg",
+    "name": "Silver Earrings",
+    "price": 79.99,
+    "description": "Chic and stylish silver earrings for everyday wear."
+  },
+  {
+    "_id": "7",
+    "image": "../src/assets/products/image5.jpg",
+    "name": "Ruby Bracelet",
+    "price": 349.99,
+    "description": "A stunning ruby bracelet that adds a pop of color to your look."
+  },
+  {
+    "_id": "8",
+    "image": "../src/assets/products/image16.jpg",
+    "name": "Amethyst Necklace",
+    "price": 199.99,
+    "description": "A mesmerizing amethyst necklace that radiates charm."
+  },
+  {
+    "_id": "9",
+    "image": "../src/assets/products/image2.jpg",
+    "name": "Rose Gold Ring",
+    "price": 149.99,
+    "description": "A trendy rose gold ring that complements any outfit."
+  },
+  {
+    "_id": "10",
+    "image": "../src/assets/products/image3.jpg",
+    "name": "Turquoise Earrings",
+    "price": 89.99,
+    "description": "Bohemian turquoise earrings for a carefree look."
+  },
+  {
+    "_id": "11",
+    "image": "../src/assets/products/image1.jpg",
+    "name": "Platinum Bracelet",
+    "price": 799.99,
+    "description": "A luxurious platinum bracelet that signifies timeless elegance."
+  },
+  {
+    "_id": "12",
+    "image": "../src/assets/products/image8.jpg",
+    "name": "Opal Pendant",
+    "price": 249.99,
+    "description": "An opal pendant that shimmers with a kaleidoscope of colors."
+  },
+  {
+    "_id": "13",
+    "image": "../src/assets/products/image6.jpg",
+    "name": "Citrine Ring",
+    "price": 119.99,
+    "description": "A citrine ring that brings warmth and radiance to your look."
+  },
+  {
+    "_id": "14",
+    "image": "../src/assets/products/image7.jpg",
+    "name": "White Gold Earrings",
+    "price": 399.99,
+    "description": "Elegant white gold earrings for a touch of sophistication."
+  }
+]

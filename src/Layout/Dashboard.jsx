@@ -11,7 +11,7 @@ const Dashboard = () => {
     return (
         <>
             <div className="flex">
-                <div className="bg-secondary-100 h-screen w-2/12 py-5">
+                <div className="bg-secondary-100 min-h-screen w-3/12 py-5">
                     <Link to='/dashboard'>
                         <img src={logo} className="w-full" alt="" />
                     </Link>
@@ -81,7 +81,7 @@ const Dashboard = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="p-10">
+                <div className="p-10 w-full">
                     <Outlet />
                 </div>
             </div >
