@@ -17,6 +17,7 @@ import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import MyAllItems from "../Pages/Dashboard/MyAllItems/MyAllItems";
 import ManageMyItems from "../Pages/Dashboard/ManageMyItems/ManageMyItems";
 import AddItems from "../Pages/Dashboard/AddItems/AddItems";
+import DashboardMain from "../Pages/Dashboard/DashboardMain/DashboardMain";
 
 
 
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
         path: 'dashboard',
         element: <Dashboard/>,
         children: [
+            {
+                path: '/dashboard',
+                element: <DashboardMain/>
+            },
             // Admin 
             {
                 path: 'allItems',
