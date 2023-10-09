@@ -6,7 +6,7 @@ const AllJewelry = () => {
     const [jewelrys, setJewelrys] = useState();
 
     useEffect(() => {
-        fetch('jewelry.json')
+        fetch('http://localhost:5000/jewelrys')
             .then(res => res.json())
             .then(data => setJewelrys(data))
     }, [])
